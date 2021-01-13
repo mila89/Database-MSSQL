@@ -1,0 +1,8 @@
+CREATE TABLE People
+(
+  Id INT NOT NULL PRIMARY KEY,
+  Name VARCHAR(200) NOT NULL,
+  Picture VARBINARY(8000),
+  LastName VARCHAR(50)
+
+)
