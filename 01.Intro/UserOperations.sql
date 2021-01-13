@@ -1,0 +1,22 @@
+
+ALTER TABLE users
+  DROP CONSTRAINT [PK__Users__3214EC07FD3A3824]
+
+ALTER TABLE USERS
+ADD PRIMARY KEY (ID,USERNAME); 
+
+ALTER TABLE USERS
+ADD CHECK (DATALENGTH(password) >=5); 
+
+ALTER TABLE Users
+add constraint LastLoginTime_CT
+ DEFAULT Current_timestamp for LastLoginTime; 
+
+ ALTER TABLE Users
+DROP CONSTRAINT [PK__Users__77222459F77D1F8F]
+
+ALTER TABLE Users
+Add primary key (Id) 
+
+ALTER TABLE USERS
+ADD CHECK (DATALENGTH(Username) >=3); 
