@@ -1,0 +1,1 @@
+SELECT DepartmentID, Name, ManagerID from Departments;
