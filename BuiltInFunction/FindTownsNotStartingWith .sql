@@ -1,0 +1,3 @@
+SELECT TownID, Name FROM Towns WHERE (SUBSTRING(Name,1,1)!='R') AND (SUBSTRING(Name,1,1)!='B') 
+AND (SUBSTRING(Name,1,1)!='D') 
+ORDER BY Name;
