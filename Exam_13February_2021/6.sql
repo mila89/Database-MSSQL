@@ -1,0 +1,3 @@
+SELECT ID, Name, Size FROM FILES
+WHERE Size>1000 AND Name LIKE'%html%'
+ORDER BY Size DESC, ID, Name
